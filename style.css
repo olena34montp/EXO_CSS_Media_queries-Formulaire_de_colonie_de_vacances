@@ -1,0 +1,91 @@
+* {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+.vacance-quetioner fieldset {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  max-width: 450px;
+  border: none;
+}
+.vacance-quetioner fieldset legend {
+  grid-area: 1/1/1/4;
+  width: 100%;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  background-color: rgb(102, 51, 153);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.vacance-quetioner fieldset .container {
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+  margin-bottom: 50px;
+}
+.vacance-quetioner fieldset .container:nth-of-type(1) {
+  grid-area: 2/2/2/3;
+}
+.vacance-quetioner fieldset .container:nth-of-type(2) {
+  grid-area: 3/2/3/3;
+}
+.vacance-quetioner fieldset .container:nth-of-type(3) {
+  grid-area: 4/2/4/3;
+}
+.vacance-quetioner fieldset .container:nth-of-type(4) {
+  grid-area: 5/2/5/3;
+}
+.vacance-quetioner fieldset .container:nth-of-type(5) {
+  grid-area: 6/2/6/3;
+}
+.vacance-quetioner fieldset .container .inner-container li {
+  margin: 10px 0;
+}
+.vacance-quetioner fieldset .container .inner-container label {
+  font-weight: bold;
+}
+.vacance-quetioner fieldset .container input {
+  border-radius: 5px;
+}
+.vacance-quetioner fieldset .container input[type=text] {
+  background-color: rgb(249, 250, 255);
+  border: 1px solid #e6e6e6;
+  padding: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .vacance-quetioner fieldset {
+    max-width: 850px;
+  }
+  .vacance-quetioner fieldset .container {
+    flex-direction: row;
+    max-width: 100%;
+    align-items: center;
+  }
+  .vacance-quetioner fieldset .container .inner-container {
+    display: flex;
+    align-items: center;
+  }
+  .vacance-quetioner fieldset .container .inner-container li {
+    display: flex;
+    margin-right: 10px;
+  }
+  .vacance-quetioner fieldset .container .inner-container li input[type=radio],
+  .vacance-quetioner fieldset .container .inner-container li input[type=checkbox] {
+    margin-right: 10px;
+  }
+  .vacance-quetioner fieldset .container .vacance-quetioner-block-titre {
+    margin-right: 10px;
+  }
+  .vacance-quetioner fieldset .activity .vacance-quetioner-block-titre {
+    min-width: 150px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

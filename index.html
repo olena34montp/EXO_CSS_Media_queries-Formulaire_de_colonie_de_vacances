@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <form class="vacance-quetioner" action="@" method="post">
+            <fieldset>
+                <legend>Questionnaire de colonie de vacance</legend>
+                <div class="container">
+                    <label class="vacance-quetioner-block-titre" for="name">Votre nom</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="container">
+                    <label class="vacance-quetioner-block-titre" for="city">Votre ville d'origine</label>
+                    <input type="text" name="city" id="city">
+                </div>
+                <div class="container">
+                    <span class="vacance-quetioner-block-titre">Choisir un sport</span>
+                    <ul class="inner-container">
+                        <li>
+                            <input type="radio" name="sport" id="basket" value="basket">
+                            <label for="basket">Basket</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="sport" id="rugby" value="rugby">
+                            <label for="rugby">Rugby</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="sport" id="volley" value="volley">
+                            <label for="volley">Volley</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="container activity">
+                    <span class="vacance-quetioner-block-titre">Choisir une activité</span>
+                    <ul class="inner-container">
+                        <li>
+                            <input type="checkbox" name="cinema" id="cinema" value="cinema">
+                            <label for="cinema">Cinéma</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="peche" id="peche" value="peche">
+                            <label for="peche">Pêche</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="maquette" id="maquette" value="maquette">
+                            <label for="maquette">Maquette</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="theatre" id="theatre" value="theatre">
+                            <label for="theatre">Théatre</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="container">
+                    <label class="vacance-quetioner-block-titre" for="team-color">Couleur d'équipe</label>
+                    <select id="team-color">
+                        <option disabled>--Veuillez choisir une option--</option>
+                        <option value="team-color-1">Bleu</option>
+                        <option value="team-color-2">Rouge</option>
+                        <option value="team-color-3">Noir</option>
+                    </select>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
